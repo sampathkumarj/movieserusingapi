@@ -1,0 +1,52 @@
+Apex :
+1.Access modifiers:
+The Specification to visibility of the class,controlling where the class can be accessed them.
+public,Private,Global
+2.Sharing Modifiers:
+This defines how record-level sharing is enforced within the class,determining whether the class respects the sharing rules defined in the the salesforce org 
+Abstract,Virtual,With Sharing,Without Sharing
+3.Static(variables ,method):
+ This is a v ariable declared with the static keyword.
+ It' shared among all instances of class.
+Static is Class Based
+Syntax:
+MyClass.staticMethodName();
+4.Instance(Variables,Method):
+ These are Variables declared within the class but outside of any method.They hold data that belongs
+ to each individual instancs of the class.
+Instance is Object based
+Syntax:
+MyClass M1=new MYClass();
+M1.myInstanceMethdName();
+5.Constructor Method:
+  This method   has the sam name as the class and it is used for initializing objects of the class.
+  It's called automatically when an object is created..
+
+Salesforce api integration:
+preRequisites(for Outbound integerationO):
+External System:
+1.End point-rl 'https://api.collectapi.com/imdb/imdbSearchByName?query=inception'
+2.Authentication Apporach
+3.Method Type
+4.Request Data(Format+parameter+body) 
+apikey - 1Rkvk8pzQwwThQFVcTuXv3:0HgstCCnnRrnb60Nap9Fk4
+
+Available Options(for Outbound Integration):
+1.Apex
+2.Lwc
+3.Flows
+
+Remote Site Setting  Vs Named Credentials:
+
+Remote Site Settings:
+    Specifies the url of third party API
+	management of Authentication  needs to manually done by apexc developer Where Required.
+	Maintenance is diffcult if any change occurs in future
+	implementation varied based on the required authentication apporach..
+	
+	Named Credentails:
+	 Specifies the url and its authentation in a singke definition..
+	 salesforce manages all the authentication..
+	 Miantenance is easy if any change in future..
+	 Irrespective oth the authentation slected implemmnentation remains the same
+	
